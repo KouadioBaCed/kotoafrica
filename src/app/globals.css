@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #FFD835;
+    --color-primary-dark: #E6C230;
+    --color-secondary: #4A2C2A;
+    --color-secondary-light: #6B4644;
+    --color-accent-green: #1BAA70;
+    --color-accent-blue: #1C3D73;
+  }
+
+  body {
+    @apply text-secondary;
+  }
+
+  h1, h2, h3 {
+    @apply font-montserrat;
+  }
+
+  h4, h5, h6 {
+    @apply font-poppins;
+  }
+}
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-accent-green text-white px-6 py-3 rounded-lg font-poppins font-semibold
+           hover:bg-green-600 transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-primary text-secondary px-6 py-3 rounded-lg font-poppins font-semibold
+           hover:bg-primary-dark transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6;
+  }
+}
