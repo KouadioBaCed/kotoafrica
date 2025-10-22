@@ -13,4 +13,3 @@ export function api(path: string) {
   // ensures a single slash between base and path
   return `${API_BASE_URL.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 }
-   
