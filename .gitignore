@@ -55,9 +55,10 @@ __pycache__/
 # Django
 db.sqlite3
 db.sqlite3-journal
-/backend/media
-/backend/staticfiles
-/backend/static
+/backend/
+backend/media
+backend/staticfiles
+backend/static
 
 # TypeScript
 *.tsbuildinfo
